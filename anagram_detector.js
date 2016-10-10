@@ -1,7 +1,8 @@
 'use strict';
 
-// My solution 10/05/16
+// started 10/05/16
 // DP 12-Sep-16
+// https://www.reddit.com/r/dailyprogrammer/comments/52enht/20160912_challenge_283_easy_anagram_detector/
 
 let input = [
   '"wisdom" ? "mid sow"',
@@ -39,10 +40,10 @@ function checkForAnagram (str) {
   return (sortArray(mappedArray[0]) == sortArray(mappedArray[1])) ? true : false;
 }
 
-// for (var i = 0; i < input.length; i++) {
-//   let isAnagram = checkForAnagram(input[i]);
-//   console.log(isAnagram ? input[i].replace('?', 'is an anagram of') : input[i].replace('?', 'is NOT an anagram of '));
-// }
+for (var i = 0; i < input.length; i++) {
+  let isAnagram = checkForAnagram(input[i]);
+  console.log(isAnagram ? input[i].replace('?', 'is an anagram of') : input[i].replace('?', 'is NOT an anagram of '));
+}
 
 // Better solution (I debugged someone else's solution actually. I think they wrote it for palindromes)
 function anagram(strin){
@@ -56,6 +57,6 @@ function anagram(strin){
     return strin.replace("?","-")+" is an anagram";
   }
 
-  for (var i = 0; i < input.length; i++) {
-    console.log(anagram(input[i]));
-  }
+  // for (var i = 0; i < input.length; i++) {
+  //   console.log(anagram(input[i]));
+  // }

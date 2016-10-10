@@ -1,6 +1,8 @@
 'use strict';
+
+// started 10-4-2016
 // DP 03-Oct-16
-// Completed 10-4-2016
+// https://www.reddit.com/r/dailyprogrammer/comments/55nior/20161003_challenge_286_easy_reverse_factorial/
 
 // My solution
 let input = [3628800, 479001600, 6, 18];

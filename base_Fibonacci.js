@@ -1,7 +1,8 @@
+'use strict';
+
 // started 10-7-16
 // DP 05-Sep-16
-
-'use strict';
+// https://www.reddit.com/r/dailyprogrammer/comments/5196fi/20160905_challenge_282_easy_unusual_bases/
 
 // turns out the last input number was about 2^53, js's max int by a digit. Had to pass in as a string to get it right
 const input = [

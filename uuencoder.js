@@ -1,7 +1,8 @@
-// 10-7-16, mostly finished. Got a little tedious and idk if I want to take the time to rewrite it correctly
-// DP 16-Aug-16
-
 'use strict';
+
+// started 10-7-16, mostly finished. Got a little tedious and idk if I want to take the time to rewrite it correctly
+// DP 16-Aug-16
+// https://www.reddit.com/r/dailyprogrammer/comments/4xy6i1/20160816_challenge_279_easy_uuencoding/
 
 const fs = require('fs');
 

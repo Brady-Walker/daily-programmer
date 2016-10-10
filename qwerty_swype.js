@@ -1,6 +1,8 @@
 'use strict';
 
+// started 03-Oct-16
 // DP 19-Sep-16
+// https://www.reddit.com/r/dailyprogrammer/comments/53ijnb/20160919_challenge_284_easy_wandering_fingers/
 
 const fs = require('fs');
 
