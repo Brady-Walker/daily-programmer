@@ -67,13 +67,16 @@ function rekt (inputWord, width, height) {
 
   // construct the output using makeHorizontal, makeVertical, and word/reversedWord
   for (var i = 0; i < height; i++) {
+    // Make first row
     if (i == 0) {
       output += makeHorizontal(word) + "\n";
     }
+    // on evens, make the correct vertical and horizontal
     if (i % 2 == 0) {
       output += makeVertical(word);
       output += makeHorizontal(reversedWord) + "\n";
     }
+    // on odds, make the correct vertical and horizontal
     if (i % 2 != 0) {
       output += makeVertical(reversedWord);
       output += makeHorizontal(word) + "\n";
