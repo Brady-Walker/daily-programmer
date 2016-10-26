@@ -41,7 +41,7 @@ function sortAscending(num) {
 function iterationsInKaprekar(num) {
   let numArr = num.toString().split("");
   // not sure why this works
-  if (numArr[0] == numArr[1] && numArr[2] && numArr[3]) {
+  if (numArr[0] == numArr[1] && numArr[0] == numArr[2] && numArr[0] == numArr[3]) {
     return 0;
   }
   let count = 0;
@@ -67,7 +67,7 @@ function findHighestKaprekar() {
   return `Highest possible iterations: ${highestIts}\nUsing this number: ${highestNum}`;
 }
 
-let input = '120';
+let input = '4445';
 console.log("Number: ", input);
 console.log("biggest number: ", findLargestDigit(input));
 console.log("Descending order: ", sortDescending(input));
